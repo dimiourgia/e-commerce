@@ -1,0 +1,138 @@
+#AppBar{
+    position: fixed;
+    width:100vw;
+    height: 3.477rem;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+}
+
+#leftLogo{
+    width: 10rem;
+    height: 3.477rem;
+}
+
+.register{
+    flex:1;
+    margin-left: 1rem;
+    margin-right: .7rem;
+    text-align: center;
+}
+
+.searchLogoWrapper{
+    padding: .651rem;
+    width:2rem;
+    height: 2rem;
+    box-sizing: border-box;
+
+}
+
+#searchLogo{
+    width:12.5px;
+    height:12.5px;
+    transform: translate(-2px,-5px);
+}
+
+#closeLogo{
+    width:10px;
+    height:10px;
+    transform: translate(-1px,-5px);
+}
+
+.searchBoxWrapper{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    background: #EDEDF0;
+    border-radius: 4.167rem;
+    vertical-align:middle;
+    margin-top: .74rem;
+    box-sizing: border-box;
+}
+
+.inputSearch{
+    color: #19191D;
+    background-color: #EDEDF0;
+    border: 0px;
+    height: 2rem;
+    width: 100%;
+    padding:0px;
+}
+
+.inputSearch :focus-visible{
+    border:0px;
+}
+
+#textArea{
+height: 32px;
+width: 654px;
+left: 44px;
+top: 8px;
+right: 8px;
+background-color: #EDEDF0;
+border: 0px;
+/* Inter / Body Large */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 158%;
+/* identical to box height, or 32px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.0075em;
+
+/* Gray / 100 */
+
+color: #19191D;
+}
+
+
+/* Buttons Styles */
+
+
+.signInButton, .myCartButton{
+   margin-top: .86rem;
+   margin-left: 15px;
+   height: 1.75rem;
+   border: 1px solid;   
+   color: #2264D1;
+   border-color: #2264D1;
+   cursor:pointer;
+}
+
+.signInButton{
+    background-color: transparent;
+}
+.myCartButton{
+    background-color: white;
+}
+
+.firstWrapper, .lastWrapper {
+    display: flex;
+    flex:3; 
+}
+.midWrapper{
+    flex: 2.8;
+}
+
+.registerButton{
+    margin-top: 1rem;
+    padding: 0px;
+    border: 0px;
+    color: #2264D1;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.registerButton, .signInButton, .myCartButton, .inputSearch{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 158%;
+}
