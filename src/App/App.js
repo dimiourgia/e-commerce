@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBar from '../Components/AppBar/AppBar';
 import TopNav from '../Components/TopNav/TopNav';
+import Home from '../Components/Home/Home';
 import './App.css';
 
 
@@ -32,6 +33,7 @@ const App = () =>{
     <>
       <AppBar searchString = {searchString} onChangeHandler = {searchStringChageHandler} clearSearchString= {clearSearchString} />
       <TopNav activeCategory={activeCategory} onItemClick={onCategorySelection}></TopNav>
+      <Home></Home>
     </>  
   )
 
