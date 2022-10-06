@@ -1,6 +1,9 @@
 .topNavWrapper{
+    position: fixed;
+    background: #fff;
     height: 3.477rem;
-    margin-top: 6rem;
+    top: 6rem;
+    width: 100%;
 }
 .topNavContainer{
     margin-top: .5rem;
