@@ -39,9 +39,6 @@ const categoryList = [
     {activeIconName: vintage , inactiveIconName: inactive_vintage, caption: 'Vintage'}
 ]
 
-const active_category="";
-
-
 
 const TopNav = ( { activeCategory, onItemClick } ) =>{
 

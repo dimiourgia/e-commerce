@@ -5,7 +5,7 @@ import searchLogo from '../../searchLogo.svg';
 import closeLogo from '../../close.svg';
 
 
-const AppBar = ()=>{
+const AppBar = ({searchString, onChangeHandler, clearSearchString})=>{
 
     return(
         <div id='AppBar'>
@@ -17,7 +17,7 @@ const AppBar = ()=>{
             </div>
             
             <div className='midWrapper'>
-                <SearchBox></SearchBox>
+                <SearchBox searchString={searchString} onChangeHandler={onChangeHandler} clearSearchString={clearSearchString}></SearchBox>
             </div>
             
             <div className='lastWrapper'>
@@ -29,7 +29,7 @@ const AppBar = ()=>{
     
 }
 
-const SearchBox = () =>{
+const SearchBox = ({searchString, onChangeHandler, clearSearchString}) =>{
 return(
     <>
     <div id='searchArea' className="searchBoxWrapper">
@@ -37,10 +37,12 @@ return(
             <img id='searchLogo'  src={searchLogo} alt='Search Logo'/>
         </div>
         
-        <input type='text' placeholder='Search Item' className='inputSearch'/>
+        <input type='text' placeholder='Search Item' className='inputSearch' onChange={onChangeHandler} value={searchString}/>
         
-        <div className='searchLogoWrapper'>
-            <img id='closeLogo' src={closeLogo} alt='Close Logo' />    
+        <div className='searchLogoWrapper' >
+            <button className='closeButton' onClick={ clearSearchString }>
+                <img id='closeLogo' src={closeLogo} alt='Close Logo' />
+            </button>
         </div>
         
     </div>
