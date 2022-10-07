@@ -5,7 +5,7 @@ import searchLogo from '../../searchLogo.svg';
 import closeLogo from '../../close.svg';
 
 
-const AppBar = ({searchString, onChangeHandler, clearSearchString})=>{
+const AppBar = ({searchString, onChangeHandler, clearSearchString, cartProductCount})=>{
 
     return(
         <div id='AppBar'>
@@ -23,6 +23,7 @@ const AppBar = ({searchString, onChangeHandler, clearSearchString})=>{
             <div className='lastWrapper'>
                 <SignInButton></SignInButton>
                 <MyCartButton></MyCartButton>
+                <MyCartProductCounter cartProductCount={cartProductCount}></MyCartProductCounter>
             </div>
         </div>
     );
@@ -70,5 +71,11 @@ const MyCartButton = ()=>{
     </>
     )
 }
+
+const MyCartProductCounter = ({cartProductCount}) => (
+    <div className='myCartProductCounter'>
+        {cartProductCount}
+    </div>
+);
 
 export default AppBar;

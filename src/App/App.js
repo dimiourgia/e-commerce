@@ -10,11 +10,16 @@ const App = () =>{
   
   
   // AppBar states and methods
+    //for searchbar
   const [activeCategory, setActiveCategory] = React.useState('clothing & shoes');
   
   const onCategorySelection = (categoryCaption) => {
     setActiveCategory(categoryCaption);
   }
+
+    //for cart Product Conter
+    
+
 
 
   //TopNav states and methods
@@ -28,13 +33,31 @@ const App = () =>{
     setSearchString('');
   }
 
+//Home states and methods
+const [cartProductCount, setCartProductCount] = React.useState(0);
+const addToCartHandler = () =>{
+  setCartProductCount(cartProductCount+1);
+  //rest of the stuff....
+}
+
+
 
   return(
-    <>
-      <AppBar searchString = {searchString} onChangeHandler = {searchStringChageHandler} clearSearchString= {clearSearchString} />
-      <TopNav activeCategory={activeCategory} onItemClick={onCategorySelection}></TopNav>
-      <Home></Home>
-    </>  
+    <div>
+      <AppBar 
+      searchString = {searchString} 
+      onChangeHandler = {searchStringChageHandler} 
+      clearSearchString= {clearSearchString} 
+      cartProductCount={cartProductCount}
+      />
+      <TopNav 
+      activeCategory={activeCategory} 
+      onItemClick={onCategorySelection} 
+      />
+      <Home 
+      addToCartHandler={addToCartHandler}
+      />
+    </div>  
   )
 
 }

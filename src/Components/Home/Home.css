@@ -1,5 +1,4 @@
 .cardWrapper{
-    z-index: 1;
     height: 20.1rem;
     width: 18.4rem;
     padding: .6945rem;
@@ -55,15 +54,22 @@
     padding: 0px;
     color: #2264D1;
     border: 1px solid #2264D1;
+    background: transparent;
     height:1.5rem;
     width: 100%;
-    font-family: Inter;
-    font-size: 12.5px;
-    font-weight: 500;
-    line-height: 17px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    font-size: 13.5px;
     letter-spacing: 0.012em;
 }
 
+.addToCartButton:hover{
+    transform: scale(1,1.05);
+    cursor: pointer;
+}
 
 .cardsContainer{
     margin-top:10.5rem;

@@ -130,12 +130,20 @@ color: #19191D;
 }
 
 
-.registerButton, .signInButton, .myCartButton, .inputSearch{
+.registerButton, .inputSearch{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 13.5px;
+    font-size: 12.5px;
     line-height: 158%;
+}
+
+.signInButton, .myCartButton{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.5px;
+    line-height: 150%;
 }
 
 .closeButton{
@@ -145,4 +153,21 @@ color: #19191D;
     margin: 0px;
     border: 0px;
     background: transparent;
+}
+
+.myCartProductCounter{
+    margin-top: 6px;
+    margin-left: -11px;
+    color: white;
+    text-align: center;
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    padding:1px;
+    border-radius: 50%;
+    background: rgb(158, 8, 8);
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
 }

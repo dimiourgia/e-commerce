@@ -12,7 +12,7 @@ const items = [
 
 ]
 
-const Home = () => {
+const Home = ({addToCartHandler}) => {
     return(
     <div className="cardsContainer">
         {items.map(item => 
@@ -21,6 +21,7 @@ const Home = () => {
             desccription={item.desccription}
             price={item.price}
             shippingStatus={item.shippingStatus}
+            addToCartHandler={addToCartHandler}
         >
         </ItemCard>)}        
     </div>
