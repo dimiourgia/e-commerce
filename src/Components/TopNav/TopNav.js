@@ -51,7 +51,7 @@ const TopNav = ( { activeCategory, onItemClick } ) =>{
                         <img src={ (activeCategory===item.caption)? item.activeIconName: item.inactiveIconName } />
                     </div>
                     <div className="captionContainer">
-                        <p className={(activeCategory===item.caption)? 'active': 'inactive'}>{item.caption}</p>
+                        <p className={(activeCategory===item.caption)? 'active caption': 'inactive caption'} >{item.caption}</p>
                     </div>
                 </button>
             </div> )}

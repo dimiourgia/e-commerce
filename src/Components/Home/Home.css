@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 481px) and (max-width:767px) {
     .cardsCoontaiiner{
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: 1fr 1fr;
     }   
 }
 
