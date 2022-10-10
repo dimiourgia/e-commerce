@@ -1,5 +1,6 @@
 .topNavWrapper{
     position: fixed;
+    z-index: 100;
     background: #fff;
     height: calc(2*3.477rem);
     top: 3.477rem;
@@ -59,7 +60,4 @@
     .caption{
         visibility: hidden;
     }
-}
-.caption{
-
 }

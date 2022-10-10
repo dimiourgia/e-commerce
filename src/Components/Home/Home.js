@@ -3,16 +3,8 @@ import './Home.css';
 
 import product1 from '../../product1.png';
 
-const items = [
-    {image:{product1}, desccription:"creativity stimulating tonic. Drink every morning to generate better ideas.", price: '$15', shippingStatus: 'available in all countries' },
-    {image:{product1}, desccription:"creativity stimulating tonic. Drink every morning to generate better ideas.", price: '$15', shippingStatus: 'available in all countries'},
-    {image:{product1}, desccription:"creativity stimulating tonic. Drink every morning to generate better ideas.", price: '$15', shippingStatus: 'available in all countries'},
-    {image:{product1}, desccription:"creativity stimulating tonic. Drink every morning to generate better ideas.", price: '$15', shippingStatus: 'available in all countries'},
-    {image:{product1}, desccription:"creativity stimulating tonic. Drink every morning to generate better ideas.", price: '$15', shippingStatus: 'available in all countries'}
 
-]
-
-const Home = ({addToCartHandler}) => {
+const Home = ({addToCartHandler, items}) => {
     return(
     <div className="cardsContainer">
         {items.map(item => 
