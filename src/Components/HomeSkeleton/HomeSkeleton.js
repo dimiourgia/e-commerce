@@ -1,4 +1,6 @@
 import React from "react";
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
+
 import './HomeSkeleton.css';
 
 
@@ -13,7 +15,10 @@ const HomeSkeleton = ()=>(
 
 const ItemCard = () => {
     return(
-    <div className="sk_cardWrapper">
+    <motion.div animate={{scale: [1,.98,1]}} 
+                //initial={{scale:0}}  
+                transition={{repeat:Infinity, duration:2}}
+                className="sk_cardWrapper">
         <div className="sk_itemImageContainer">
         </div>
 
@@ -26,7 +31,7 @@ const ItemCard = () => {
             <div className='sk_addToCartContainer'>
             </div>
         </div>
-    </div>
+    </motion.div>
     )
 }
 

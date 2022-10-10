@@ -1,4 +1,6 @@
 import React from "react";
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
+
 import './Home.css';
 
 import product1 from '../../product1.png';
@@ -23,7 +25,7 @@ const Home = ({addToCartHandler, items}) => {
 
 const ItemCard = ({image, desccription, price, shippingStatus, addToCartHandler}) => {
     return(
-    <div className="cardWrapper">
+    <motion.div animate={{opacity:1}} initial={{opacity:0}}  className="cardWrapper">
         <div className="itemImageContainer">
             <img src={image} alt='product' />
         </div>
@@ -40,7 +42,7 @@ const ItemCard = ({image, desccription, price, shippingStatus, addToCartHandler}
                 <button className="addToCartButton" onClick={addToCartHandler}>Add to Cart</button>
             </div>
         </div>
-    </div>
+    </motion.div>
     )
 }
 
